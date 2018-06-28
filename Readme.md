@@ -72,7 +72,7 @@ docker-compose build
 docker-compose up -d
 ```
 
-That compiles the app using a Docker container, and then runs the app in distributed mode with one contaienr for the ASP.NET Core app, and one container for SQL Server.
+That compiles the app using a Docker container, and then runs the app in distributed mode with one container for the ASP.NET Core app, and one container for SQL Server.
 
 To run in a single container using SQLite instead of SQL Server, just run:
 
