@@ -6,22 +6,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="7.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.1.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="2.1.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.1" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.8.0-preview-20180610-02" />
+    <PackageReference Include="SpyStore.DAL" Version="1.0.1" />
+    <PackageReference Include="SpyStore.Models" Version="1.0.0" />
     <PackageReference Include="xunit" Version="2.4.0-beta.2.build4010" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0-beta.2.build4010" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SpyStore.DAL\SpyStore.DAL.csproj" />
-    <ProjectReference Include="..\SpyStore.Models\SpyStore.Models.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="RepoTests\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="TestClasses\Base\" />
   </ItemGroup>
 
 </Project>
