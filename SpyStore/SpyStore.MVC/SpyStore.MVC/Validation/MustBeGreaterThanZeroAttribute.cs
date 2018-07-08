@@ -1,6 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 
+//adding a comment for demonstration
+
 namespace SpyStore.MVC.Validation
 {
     public class MustBeGreaterThanZeroAttribute : ValidationAttribute, IClientModelValidator
