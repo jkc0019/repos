@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 
-//adding a comment for demonstration
+//adding a comment for demonstration 
 
 namespace SpyStore.MVC.Validation
 {
