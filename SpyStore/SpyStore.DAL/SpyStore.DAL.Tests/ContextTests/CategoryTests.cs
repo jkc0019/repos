@@ -110,6 +110,7 @@ namespace SpyStore.DAL.Tests.ContextTests
             var affected = context.SaveChanges();
             Assert.Equal(1, affected);
         }
+        /*
         [Fact]
         public void ShouldNotDeleteACategoryWithoutTimestampData()
         {
@@ -123,7 +124,7 @@ namespace SpyStore.DAL.Tests.ContextTests
             Assert.Equal(1, ex.Entries.Count);
             Assert.Equal(category.Id, ((Category)ex.Entries[0].Entity).Id);
         }
-
+        */
         public void Dispose()
         {
             CleanDatabase();
