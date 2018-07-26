@@ -30,7 +30,8 @@ namespace SpyStore.DAL.EF
             {
                 //Server=localhost\SQLEXPRESS01;Database=master;Trusted_Connection=True;
 
-                optionsBuilder.UseSqlServer(@"Server=localhost\SQLEXPRESS01;Database=SpyStore;Trusted_Connection=True;MultipleActiveResultSets=true;");
+                //optionsBuilder.UseSqlServer(@"Server=localhost\SQLEXPRESS01;Database=SpyStore;Trusted_Connection=True;MultipleActiveResultSets=true;");
+                optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=SpyStore;Trusted_Connection=True;MultipleActiveResultSets=true;");
 
                 //@"Server=(localdb)\mssqllocaldb;Database=SpyStore;Trusted_Connection=True;MultipleActive
                 //                                ResultSets=true;", options => options.EnableRetryOnFailure());
