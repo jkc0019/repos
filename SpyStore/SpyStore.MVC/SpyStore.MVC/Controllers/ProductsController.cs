@@ -37,7 +37,9 @@ namespace SpyStore.MVC.Controllers
         [HttpGet]
         public ActionResult Index()
         {
-            return RedirectToAction(nameof(Featured));
+			//return View();
+			//KIT Commented
+			return RedirectToAction(nameof(Featured));
         }
 
         public ActionResult Details(int id)

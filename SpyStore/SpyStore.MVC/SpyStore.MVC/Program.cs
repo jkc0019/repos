@@ -17,21 +17,22 @@ namespace SpyStore.MVC
             BuildWebHost(args).Run();
         }
 
-        //public static IWebHost BuildWebHost(string[] args) =>
-        //    WebHost.CreateDefaultBuilder(args)
-        //        .UseUrls("http://*:40001/")
-        //        .UseContentRoot(Directory.GetCurrentDirectory())
-        //        .UseIISIntegration()
-        //        .UseStartup<Startup>()
-        //        .Build();
+		public static IWebHost BuildWebHost(string[] args) =>
+			WebHost.CreateDefaultBuilder(args)
+				//.UseUrls("http://*:40001/")
+				.UseUrls("http://*/")
+				.UseContentRoot(Directory.GetCurrentDirectory())
+				.UseIISIntegration()
+				.UseStartup<Startup>()
+				.Build();
 
-        public static IWebHost BuildWebHost(string[] args) =>
-            WebHost.CreateDefaultBuilder(args)
-                .UseKestrel()
-                .UseUrls("http://*:40002/")
-                .UseContentRoot(Directory.GetCurrentDirectory())
-                .UseIISIntegration()
-                .UseStartup<Startup>()
-                .Build();
+		//public static IWebHost BuildWebHost(string[] args) =>
+  //          WebHost.CreateDefaultBuilder(args)
+  //              .UseKestrel()
+  //              .UseUrls("http://*:40002/")
+  //              .UseContentRoot(Directory.GetCurrentDirectory())
+  //              .UseIISIntegration()
+  //              .UseStartup<Startup>()
+  //              .Build();
     }
 }
