@@ -1,4 +1,4 @@
-FROM microsoft/aspnetcore:2.0-nanoserver-1709 AS base
+FROM microsoft/aspnetcore-build:1.0-2.0 AS base
 WORKDIR /app
 EXPOSE 40001
 

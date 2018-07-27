@@ -71,7 +71,7 @@ namespace SpyStore.MVC.Controllers
             }
             catch (Exception ex)
             {
-                ModelState.AddModelError(string.Empty, "There was an error adding the item to the cart.");
+                ModelState.AddModelError(string.Empty, "There was an error adding the item to the cart." + ex.ToString());
                 return View(item);
             }
             return RedirectToAction(nameof(CartController.Index), new { customerId });
@@ -94,7 +94,7 @@ namespace SpyStore.MVC.Controllers
             }
             catch (Exception ex)
             {
-                ModelState.AddModelError(string.Empty, "An error occurred updating the cart.  Please reload the page and try again.");
+                ModelState.AddModelError(string.Empty, "An error occurred updating the cart.  Please reload the page and try again. " + ex.ToString());
                 return PartialView(item);
             }
         }

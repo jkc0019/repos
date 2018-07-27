@@ -14,7 +14,7 @@ namespace SpyStore.Service
     {
         public static void Main(string[] args)
         {
-            BuildWebHost(args).Run(); // comment to cause a checkin
+            BuildWebHost(args).Run(); 
         }
 
         public static IWebHost BuildWebHost(string[] args) =>
