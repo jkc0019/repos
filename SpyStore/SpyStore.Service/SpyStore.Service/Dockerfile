@@ -2,7 +2,7 @@ FROM microsoft/aspnetcore:2.0-nanoserver-1709 AS base
 WORKDIR /app
 EXPOSE 80
 
-FROM microsoft/aspnetcore-build:2.0-nanoserver-1709 AS build
+FROM microsoft/aspnetcore-build:1.0-2.0 AS build
 WORKDIR /src
 COPY ../SpyStore.Service/SpyStore.Service/SpyStore.Service.csproj ../SpyStore.Service/SpyStore.Service/
 RUN dotnet restore ../SpyStore.Service/SpyStore.Service/SpyStore.Service.csproj
