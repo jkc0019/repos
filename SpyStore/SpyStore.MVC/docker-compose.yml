@@ -7,6 +7,8 @@ services:
     build:
       context: .
       dockerfile: ..\SpyStore.Service\SpyStore.Service\Dockerfile
+    ports:
+      - "40001:40001"
 
   spystore.mvc:
     image: ${DOCKER_REGISTRY}spystoremvc
@@ -17,4 +19,4 @@ services:
     depends_on:
       - spystore.service
     ports:
-      - "5000:80"
+      - "80:80"
