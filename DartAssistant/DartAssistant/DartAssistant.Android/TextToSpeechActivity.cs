@@ -203,7 +203,6 @@ namespace DartAssistant.Droid
 				// if there is nothing to say, don't say it
 				if (!string.IsNullOrEmpty(textBox.Text))
 				{
-					
 					textToSpeech.Speak(textBox.Text, QueueMode.Flush, null);
 				}
 					
